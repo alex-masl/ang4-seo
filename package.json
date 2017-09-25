@@ -3,10 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "prestart": "ng build --prod && ngc",
-    "start": "ts-node src/server.ts",
-
     "ng": "ng",
+    "setupbeforedeploy": "ng build --prod && ngc",
+    "start": "ts-node src/server.ts",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
