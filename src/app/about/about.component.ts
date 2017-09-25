@@ -32,7 +32,6 @@ export class AboutComponent implements OnInit {
 
     this.dbService.getProducts("test", 36, 0, 'Name').subscribe(items => {
       this.items = items;
-      window.scrollTo(0,0);
     });
   }
 
